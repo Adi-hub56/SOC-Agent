@@ -1,0 +1,768 @@
+2026-05-16 05:30:01,522 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 05:30:01,644 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 05:30:01,644 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 05:30:01,650 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 05:30:01,650 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 05:30:01,652 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 05:30:01,652 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 05:30:01,653 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 05:30:01,655 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 05:30:01,655 - sqlalchemy.engine.Engine - INFO - [generated in 0.00012s] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 05:30:01,663 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-05-16 05:32:39,613 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 05:32:39,644 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 05:32:39,644 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 05:32:39,645 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 05:32:39,645 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 05:32:39,646 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 05:32:39,646 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 05:32:39,646 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 05:32:39,648 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 05:32:39,648 - sqlalchemy.engine.Engine - INFO - [generated in 0.00012s] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 05:32:39,650 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-05-16 05:32:49,586 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 05:32:49,608 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 05:32:49,609 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 05:32:49,611 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 05:32:49,611 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 05:32:49,612 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 05:32:49,612 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 05:32:49,613 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 05:32:49,616 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 05:32:49,616 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 05:32:49,619 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-05-16 06:16:24,766 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:16:24,875 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:16:24,876 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:16:24,883 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:16:24,884 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:16:24,888 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:16:24,889 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:16:24,892 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:16:24,893 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:16:24,894 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:17:37,691 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:17:38,626 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:17:38,637 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:17:38,637 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:17:38,639 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:17:38,639 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:17:38,639 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:17:38,639 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:17:38,640 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:17:38,641 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:17:38,641 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:22:08,187 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:26:04,872 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:26:04,891 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:26:04,891 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:26:04,892 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:26:04,892 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:26:04,893 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:26:04,893 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:26:04,894 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:26:04,896 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:26:04,896 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:26:04,906 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:26:04,907 - sqlalchemy.engine.Engine - INFO - [cached since 0.01063s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:26:04,907 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:26:04,907 - sqlalchemy.engine.Engine - INFO - [cached since 0.01132s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:26:04,908 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id VARCHAR NOT NULL, 
+	username VARCHAR NOT NULL, 
+	email VARCHAR NOT NULL, 
+	password_hash VARCHAR NOT NULL, 
+	role VARCHAR, 
+	is_active BOOLEAN, 
+	created_at TIMESTAMP WITHOUT TIME ZONE, 
+	updated_at TIMESTAMP WITHOUT TIME ZONE, 
+	last_login TIMESTAMP WITHOUT TIME ZONE, 
+	PRIMARY KEY (id), 
+	UNIQUE (username), 
+	UNIQUE (email)
+)
+
+
+2026-05-16 06:26:04,909 - sqlalchemy.engine.Engine - INFO - [no key 0.00018s] {}
+2026-05-16 06:26:04,953 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE incidents (
+	id VARCHAR NOT NULL, 
+	event_id VARCHAR NOT NULL, 
+	timestamp TIMESTAMP WITHOUT TIME ZONE, 
+	event_type VARCHAR, 
+	raw_event JSON NOT NULL, 
+	classification VARCHAR, 
+	severity VARCHAR, 
+	threat_score INTEGER, 
+	confidence INTEGER, 
+	investigation_findings JSON, 
+	recommended_actions JSON, 
+	pdf_report_path TEXT, 
+	markdown_report_path TEXT, 
+	status VARCHAR, 
+	error_message TEXT, 
+	analyzed_by VARCHAR, 
+	created_at TIMESTAMP WITHOUT TIME ZONE, 
+	updated_at TIMESTAMP WITHOUT TIME ZONE, 
+	completed_at TIMESTAMP WITHOUT TIME ZONE, 
+	PRIMARY KEY (id), 
+	UNIQUE (event_id), 
+	FOREIGN KEY(analyzed_by) REFERENCES users (id)
+)
+
+
+2026-05-16 06:26:04,953 - sqlalchemy.engine.Engine - INFO - [no key 0.00017s] {}
+2026-05-16 06:26:04,965 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE audit_logs (
+	id VARCHAR NOT NULL, 
+	user_id VARCHAR, 
+	action VARCHAR NOT NULL, 
+	incident_id VARCHAR, 
+	details JSON, 
+	timestamp TIMESTAMP WITHOUT TIME ZONE, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id), 
+	FOREIGN KEY(incident_id) REFERENCES incidents (id)
+)
+
+
+2026-05-16 06:26:04,965 - sqlalchemy.engine.Engine - INFO - [no key 0.00023s] {}
+2026-05-16 06:26:04,971 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:26:04,980 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:26:16,016 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:26:17,284 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:26:17,295 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:26:17,295 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:26:17,296 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:26:17,296 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:26:17,297 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:26:17,297 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:26:17,298 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:26:17,300 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:26:17,301 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:26:17,303 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:26:17,303 - sqlalchemy.engine.Engine - INFO - [cached since 0.002788s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:26:17,304 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:26:17,304 - sqlalchemy.engine.Engine - INFO - [cached since 0.003483s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:26:17,304 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:26:17,305 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:29:34,301 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:29:35,629 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:29:35,639 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:29:35,639 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:29:35,640 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:29:35,640 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:29:35,641 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:29:35,641 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:29:35,642 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:29:35,644 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:29:35,645 - sqlalchemy.engine.Engine - INFO - [generated in 0.00018s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:29:35,647 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:29:35,647 - sqlalchemy.engine.Engine - INFO - [cached since 0.002521s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:29:35,648 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:29:35,648 - sqlalchemy.engine.Engine - INFO - [cached since 0.003388s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:29:35,648 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:29:35,649 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:30:58,026 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:30:59,295 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:30:59,308 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:30:59,308 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:30:59,309 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:30:59,309 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:30:59,310 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:30:59,310 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:30:59,311 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:30:59,313 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:30:59,313 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:30:59,316 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:30:59,316 - sqlalchemy.engine.Engine - INFO - [cached since 0.002718s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:30:59,316 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:30:59,317 - sqlalchemy.engine.Engine - INFO - [cached since 0.003594s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:30:59,318 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:30:59,318 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:35:02,992 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:35:03,842 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:35:03,856 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:35:03,856 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:35:03,857 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:35:03,857 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:35:03,858 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:35:03,858 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:35:03,859 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:35:03,862 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:35:03,862 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:35:03,864 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:35:03,864 - sqlalchemy.engine.Engine - INFO - [cached since 0.002583s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:35:03,865 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:35:03,865 - sqlalchemy.engine.Engine - INFO - [cached since 0.00346s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:35:03,866 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:35:03,866 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:35:21,796 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:35:22,995 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:35:23,008 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:35:23,008 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:35:23,010 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:35:23,010 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:35:23,010 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:35:23,011 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:35:23,011 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:35:23,014 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:35:23,015 - sqlalchemy.engine.Engine - INFO - [generated in 0.00020s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:35:23,017 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:35:23,017 - sqlalchemy.engine.Engine - INFO - [cached since 0.002797s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:35:23,018 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:35:23,018 - sqlalchemy.engine.Engine - INFO - [cached since 0.003551s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:35:23,019 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:35:23,019 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:40:56,392 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:40:57,258 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:40:57,269 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:40:57,269 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:40:57,270 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:40:57,270 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:40:57,271 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:40:57,271 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:40:57,272 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:40:57,275 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:40:57,275 - sqlalchemy.engine.Engine - INFO - [generated in 0.00020s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:40:57,277 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:40:57,277 - sqlalchemy.engine.Engine - INFO - [cached since 0.002796s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:40:57,278 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:40:57,278 - sqlalchemy.engine.Engine - INFO - [cached since 0.003376s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:40:57,278 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:40:57,279 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:40:59,311 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:41:00,473 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:41:00,482 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:41:00,482 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:41:00,483 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:41:00,483 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:41:00,484 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:41:00,484 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:41:00,484 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:41:00,487 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:41:00,487 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:41:00,489 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:41:00,489 - sqlalchemy.engine.Engine - INFO - [cached since 0.002496s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:41:00,490 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:41:00,490 - sqlalchemy.engine.Engine - INFO - [cached since 0.003149s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:41:00,491 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:41:00,491 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:56:23,590 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 06:56:25,823 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 06:56:25,921 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 06:56:25,921 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:56:25,925 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 06:56:25,926 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:56:25,927 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 06:56:25,927 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 06:56:25,930 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 06:56:25,939 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:56:25,940 - sqlalchemy.engine.Engine - INFO - [generated in 0.00045s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:56:25,954 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:56:25,954 - sqlalchemy.engine.Engine - INFO - [cached since 0.01468s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:56:25,955 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 06:56:25,955 - sqlalchemy.engine.Engine - INFO - [cached since 0.01621s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 06:56:25,956 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 06:56:25,956 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 06:57:46,686 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 07:02:53,937 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 07:02:53,980 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 07:02:53,980 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 07:02:53,983 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 07:02:53,983 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 07:02:53,985 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 07:02:53,985 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 07:02:53,986 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 07:02:53,988 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 07:02:53,988 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 07:02:53,994 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 07:02:53,994 - sqlalchemy.engine.Engine - INFO - [cached since 0.006278s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 07:02:53,995 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 07:02:53,995 - sqlalchemy.engine.Engine - INFO - [cached since 0.006954s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 07:02:53,996 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 07:02:53,996 - app.utils.logger - INFO - ⚠️  WARNING: GROQ_API_KEY not set. Add to .env file | {}
+2026-05-16 08:50:32,802 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 08:51:03,963 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 08:51:04,114 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 08:51:04,114 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 08:51:04,119 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 08:51:04,119 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 08:51:04,122 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 08:51:04,123 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 08:51:04,125 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 08:51:04,133 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 08:51:04,135 - sqlalchemy.engine.Engine - INFO - [generated in 0.00047s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 08:51:04,145 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 08:51:04,146 - sqlalchemy.engine.Engine - INFO - [cached since 0.01239s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 08:51:04,147 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 08:51:04,147 - sqlalchemy.engine.Engine - INFO - [cached since 0.01408s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 08:51:04,148 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 08:51:04,149 - app.utils.logger - INFO - ✅ Groq API key loaded | {}
+2026-05-16 08:59:07,588 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 08:59:08,706 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 08:59:08,744 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 08:59:08,744 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 08:59:08,747 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 08:59:08,747 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 08:59:08,749 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 08:59:08,749 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 08:59:08,750 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 08:59:08,753 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 08:59:08,753 - sqlalchemy.engine.Engine - INFO - [generated in 0.00040s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 08:59:08,758 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 08:59:08,758 - sqlalchemy.engine.Engine - INFO - [cached since 0.005569s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 08:59:08,759 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 08:59:08,759 - sqlalchemy.engine.Engine - INFO - [cached since 0.006229s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 08:59:08,759 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 08:59:08,760 - app.utils.logger - INFO - ✅ Groq API key loaded | {}
+2026-05-16 09:01:37,025 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 09:01:38,506 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 09:01:38,551 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 09:01:38,551 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:01:38,555 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 09:01:38,555 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:01:38,556 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 09:01:38,556 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:01:38,557 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 09:01:38,562 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:01:38,562 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:01:38,567 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:01:38,567 - sqlalchemy.engine.Engine - INFO - [cached since 0.005436s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:01:38,568 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:01:38,568 - sqlalchemy.engine.Engine - INFO - [cached since 0.006159s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:01:38,569 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 09:01:38,569 - app.utils.logger - INFO - ✅ Groq API key loaded | {}
+2026-05-16 09:01:43,048 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-16 09:01:43,061 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-05-16 09:01:43,090 - app.utils.logger - INFO - Using Groq API | {'model': 'mixtral-8x7b-32768'}
+2026-05-16 09:01:43,090 - app.utils.logger - INFO - Step 1: Classification | {'event_id': 'evt_test_001'}
+2026-05-16 09:01:43,092 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}], 'model': 'mixtral-8x7b-32768', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:01:43,120 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-16 09:01:43,222 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffaed62e90>
+2026-05-16 09:01:43,222 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffffaebf0680> server_hostname='api.groq.com' timeout=5.0
+2026-05-16 09:01:43,247 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffaed63110>
+2026-05-16 09:01:43,247 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:01:43,248 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:01:43,248 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:01:43,248 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:01:43,248 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:01:43,273 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sat, 16 May 2026 09:01:43 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'279'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-request-id', b'req_01krr0a8ftf2drkrs05phr4w5a'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=mLC1rRwzLjOvxvn6zN1V2Is2c8kat_D0CeGaWqD5YFc-1778922103.2516623-1.0.1.1-LbC8VUfwOcDu9B11d4J5iliaJ9NTXiBBvO5gIlAEkAvqLPHs1fQnFXM5gHrzRGI0dyy10Ryq9ULE5ilkyguBgNLrrgXx1n00pNGwmxWG2uQgyw.qKk8IyDTmLqmu4uRJ; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Sat, 16 May 2026 09:31:43 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9fc933095ff6205b-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:01:43,274 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-05-16 09:01:43,274 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:01:43,274 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:01:43,274 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:01:43,274 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:01:43,274 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "400 Bad Request"
+2026-05-16 09:01:43,274 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/groq/_base_client.py", line 961, in _request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.11/site-packages/httpx/_models.py", line 758, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-05-16 09:01:43,277 - groq._base_client - DEBUG - Not retrying
+2026-05-16 09:01:43,277 - groq._base_client - DEBUG - Re-raising status error
+2026-05-16 09:01:43,277 - app.utils.logger - ERROR - LLM call failed | {'error': "Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"}
+2026-05-16 09:01:43,277 - app.utils.logger - ERROR - Analysis failed | {'error': "Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"}
+2026-05-16 09:01:43,300 - httpcore.connection - DEBUG - close.started
+2026-05-16 09:01:43,301 - httpcore.connection - DEBUG - close.complete
+2026-05-16 09:03:02,133 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-16 09:03:02,136 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-05-16 09:03:02,143 - app.utils.logger - INFO - Using Groq API | {'model': 'mixtral-8x7b-32768'}
+2026-05-16 09:03:02,143 - app.utils.logger - INFO - Step 1: Classification | {'event_id': 'evt_test_001'}
+2026-05-16 09:03:02,146 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}], 'model': 'mixtral-8x7b-32768', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:03:02,148 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-16 09:03:02,255 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffff9db13050>
+2026-05-16 09:03:02,255 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffff9dbd0680> server_hostname='api.groq.com' timeout=5.0
+2026-05-16 09:03:02,449 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffff9db132d0>
+2026-05-16 09:03:02,450 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:03:02,451 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:03:02,451 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:03:02,451 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:03:02,452 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:03:02,471 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sat, 16 May 2026 09:03:02 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'279'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-request-id', b'req_01krr0cntxfrxb9htcmzd3487f'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=SKcrec5Emff7HqFTvWZ9P0ujFnEuVv3MQL2sfk27HH0-1778922182.4450698-1.0.1.1-v3_wzShfDb2quBmE1NXZnuRcgcpOL4sTkmUVK4ehow2i.PRrbt3E45uQS3MROahbzyUJ3OoQCHQlw3bF09C9t8JT2IeCKnJ5Zw0FnSO87sv3bnoC_4BqWVzVAxBAlbgZ; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Sat, 16 May 2026 09:33:02 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9fc934f84df120fe-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:03:02,472 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-05-16 09:03:02,472 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:03:02,473 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:03:02,473 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:03:02,473 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:03:02,473 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "400 Bad Request"
+2026-05-16 09:03:02,473 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/groq/_base_client.py", line 961, in _request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.11/site-packages/httpx/_models.py", line 758, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-05-16 09:03:02,474 - groq._base_client - DEBUG - Not retrying
+2026-05-16 09:03:02,474 - groq._base_client - DEBUG - Re-raising status error
+2026-05-16 09:03:02,475 - app.utils.logger - ERROR - LLM call failed | {'error': "Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"}
+2026-05-16 09:03:02,475 - app.utils.logger - ERROR - Analysis failed | {'error': "Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"}
+2026-05-16 09:03:02,489 - httpcore.connection - DEBUG - close.started
+2026-05-16 09:03:02,490 - httpcore.connection - DEBUG - close.complete
+2026-05-16 09:06:17,207 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 09:06:18,232 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 09:06:18,246 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 09:06:18,246 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:06:18,247 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 09:06:18,247 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:06:18,248 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 09:06:18,248 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:06:18,249 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 09:06:18,252 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:06:18,252 - sqlalchemy.engine.Engine - INFO - [generated in 0.00018s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:06:18,255 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:06:18,256 - sqlalchemy.engine.Engine - INFO - [cached since 0.003815s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:06:18,256 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:06:18,256 - sqlalchemy.engine.Engine - INFO - [cached since 0.004606s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:06:18,257 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 09:06:18,258 - app.utils.logger - INFO - ✅ Groq API key loaded | {}
+2026-05-16 09:06:20,659 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-16 09:06:20,662 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-05-16 09:06:20,677 - app.utils.logger - INFO - Using Groq API | {'model': 'llama-3.1-70b-versatile'}
+2026-05-16 09:06:20,677 - app.utils.logger - INFO - Step 1: Classification | {'event_id': 'evt_test_001'}
+2026-05-16 09:06:20,678 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}], 'model': 'llama-3.1-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:06:20,682 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-16 09:06:20,697 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffa34b2ed0>
+2026-05-16 09:06:20,697 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffffa3340680> server_hostname='api.groq.com' timeout=5.0
+2026-05-16 09:06:20,796 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffa34b3150>
+2026-05-16 09:06:20,796 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:06:20,797 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:06:20,797 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:06:20,797 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:06:20,797 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:06:20,875 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sat, 16 May 2026 09:06:20 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'284'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-request-id', b'req_01krr0jqhhebqtg0k4855wxz15'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=0L_hYvyOvebodnERcp3owBlwb1Tbt_5vL.X8riu7j3E-1778922380.8015993-1.0.1.1-Xen7sR3Ur.jnyOpr4uGk87YzTpOeM1UoY8howZ4CNhFVIeasOz3476kG9KVZTJk4SvUmXYuZgPJEtkI71c1JeSAb6stdo5t.q6pL_yw7F1pS53rwabcuq5WjO6on0Zm_; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Sat, 16 May 2026 09:36:20 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9fc939d00fce4720-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:06:20,876 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-05-16 09:06:20,876 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:06:20,876 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:06:20,876 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:06:20,876 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:06:20,876 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "400 Bad Request"
+2026-05-16 09:06:20,876 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/groq/_base_client.py", line 961, in _request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.11/site-packages/httpx/_models.py", line 758, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-05-16 09:06:20,878 - groq._base_client - DEBUG - Not retrying
+2026-05-16 09:06:20,878 - groq._base_client - DEBUG - Re-raising status error
+2026-05-16 09:06:20,878 - app.utils.logger - ERROR - LLM call failed | {'error': "Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"}
+2026-05-16 09:06:20,878 - app.utils.logger - ERROR - Analysis failed | {'error': "Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"}
+2026-05-16 09:06:20,890 - httpcore.connection - DEBUG - close.started
+2026-05-16 09:06:20,891 - httpcore.connection - DEBUG - close.complete
+2026-05-16 09:07:25,055 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 09:07:26,151 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 09:07:26,176 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 09:07:26,176 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:07:26,178 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 09:07:26,178 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:07:26,182 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 09:07:26,182 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:07:26,183 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 09:07:26,187 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:07:26,187 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:07:26,191 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:07:26,191 - sqlalchemy.engine.Engine - INFO - [cached since 0.00415s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:07:26,192 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:07:26,192 - sqlalchemy.engine.Engine - INFO - [cached since 0.005122s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:07:26,194 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 09:07:26,194 - app.utils.logger - INFO - ✅ Groq API key loaded | {}
+2026-05-16 09:07:52,659 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-16 09:07:52,663 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-05-16 09:07:52,672 - app.utils.logger - INFO - Using Groq API | {'model': 'gemma-2-9b-it'}
+2026-05-16 09:07:52,673 - app.utils.logger - INFO - Step 1: Classification | {'event_id': 'evt_test_001'}
+2026-05-16 09:07:52,674 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}], 'model': 'gemma-2-9b-it', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:07:52,677 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-16 09:07:52,708 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffff9c41b1d0>
+2026-05-16 09:07:52,708 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffff9c4d0680> server_hostname='api.groq.com' timeout=5.0
+2026-05-16 09:07:52,742 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffff9c485950>
+2026-05-16 09:07:52,743 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:07:52,743 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:07:52,744 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:07:52,744 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:07:52,744 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:07:53,069 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Date', b'Sat, 16 May 2026 09:07:52 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-request-id', b'req_01krr0nhasemytvyq1xqhpvhdy'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=IJgDkCt2u7NxxmsO.OBtU0g7qmovtp69Jejvoaj7DPA-1778922472.744449-1.0.1.1-MWE4NwifalsVotEN7zYTlkorDaSnsZ84.uGw5AbelS5dqO0Bv4dGS0NYAj5pZV7ma5g8gPSfG.O1qctLlntw1U_iLKyXG2CMhsSTjEX3yPK4ugY.Ks6VAAZktdtgOUsI; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Sat, 16 May 2026 09:37:52 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fc93c0eaaad0eea-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:07:53,070 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-05-16 09:07:53,070 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:07:53,072 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:07:53,072 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:07:53,072 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:07:53,072 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "404 Not Found"
+2026-05-16 09:07:53,072 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/groq/_base_client.py", line 961, in _request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.11/site-packages/httpx/_models.py", line 758, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '404 Not Found' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-05-16 09:07:53,074 - groq._base_client - DEBUG - Not retrying
+2026-05-16 09:07:53,074 - groq._base_client - DEBUG - Re-raising status error
+2026-05-16 09:07:53,074 - app.utils.logger - ERROR - LLM call failed | {'error': "Error code: 404 - {'error': {'message': 'The model `gemma-2-9b-it` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"}
+2026-05-16 09:07:53,074 - app.utils.logger - ERROR - Analysis failed | {'error': "Error code: 404 - {'error': {'message': 'The model `gemma-2-9b-it` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"}
+2026-05-16 09:07:53,089 - httpcore.connection - DEBUG - close.started
+2026-05-16 09:07:53,089 - httpcore.connection - DEBUG - close.complete
+2026-05-16 09:09:22,869 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 09:09:23,974 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 09:09:24,016 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 09:09:24,016 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:09:24,018 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 09:09:24,018 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:09:24,019 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 09:09:24,020 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:09:24,021 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 09:09:24,024 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:09:24,024 - sqlalchemy.engine.Engine - INFO - [generated in 0.00047s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:09:24,029 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:09:24,030 - sqlalchemy.engine.Engine - INFO - [cached since 0.005735s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:09:24,031 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:09:24,031 - sqlalchemy.engine.Engine - INFO - [cached since 0.006901s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:09:24,032 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 09:09:24,032 - app.utils.logger - INFO - ✅ Groq API key loaded | {}
+2026-05-16 09:09:39,118 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-16 09:09:39,122 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-05-16 09:09:39,130 - app.utils.logger - INFO - Using Groq API | {'model': 'llama-3.2-1b-preview'}
+2026-05-16 09:09:39,130 - app.utils.logger - INFO - Step 1: Classification | {'event_id': 'evt_test_001'}
+2026-05-16 09:09:39,132 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}], 'model': 'llama-3.2-1b-preview', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:09:39,136 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-16 09:09:39,199 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffb5612e90>
+2026-05-16 09:09:39,199 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffffb54a0680> server_hostname='api.groq.com' timeout=5.0
+2026-05-16 09:09:39,216 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffb5613110>
+2026-05-16 09:09:39,216 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:09:39,216 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:09:39,216 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:09:39,217 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:09:39,217 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:09:39,304 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Sat, 16 May 2026 09:09:39 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'281'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-request-id', b'req_01krr0rsa1evtv3cv1rc2skvdj'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=.j.Df6sh3x0UV3..KxBKKjSmpPRt6HP5a7TyWF8Uq78-1778922579.2375987-1.0.1.1-zNfipKPUyPFDtfRJJYSQZVQRLX_v4QmbljDhuiTsDzIcSfhJYjVDHb.ZqIERn6qoRwNM7lfI0s1OGq1FpJheGHeZf6EO0gW9vS2eXmFLa55iyEyG30jebP1LVY1MSEHu; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Sat, 16 May 2026 09:39:39 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9fc93ea838e4f27f-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:09:39,306 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-05-16 09:09:39,306 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:09:39,306 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:09:39,306 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:09:39,306 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:09:39,306 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "400 Bad Request"
+2026-05-16 09:09:39,306 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/groq/_base_client.py", line 961, in _request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.11/site-packages/httpx/_models.py", line 758, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-05-16 09:09:39,307 - groq._base_client - DEBUG - Not retrying
+2026-05-16 09:09:39,307 - groq._base_client - DEBUG - Re-raising status error
+2026-05-16 09:09:39,307 - app.utils.logger - ERROR - LLM call failed | {'error': "Error code: 400 - {'error': {'message': 'The model `llama-3.2-1b-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"}
+2026-05-16 09:09:39,307 - app.utils.logger - ERROR - Analysis failed | {'error': "Error code: 400 - {'error': {'message': 'The model `llama-3.2-1b-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}"}
+2026-05-16 09:09:39,323 - httpcore.connection - DEBUG - close.started
+2026-05-16 09:09:39,324 - httpcore.connection - DEBUG - close.complete
+2026-05-16 09:12:46,736 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-16 09:13:00,808 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-16 09:13:01,127 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-16 09:13:01,128 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:13:01,137 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-16 09:13:01,139 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:13:01,144 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-16 09:13:01,144 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-16 09:13:01,147 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-16 09:13:01,167 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:13:01,168 - sqlalchemy.engine.Engine - INFO - [generated in 0.00124s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:13:01,208 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:13:01,217 - sqlalchemy.engine.Engine - INFO - [cached since 0.0507s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:13:01,222 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-16 09:13:01,223 - sqlalchemy.engine.Engine - INFO - [cached since 0.05628s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-16 09:13:01,227 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-16 09:13:01,228 - app.utils.logger - INFO - ✅ Groq API key loaded | {}
+2026-05-16 09:13:14,324 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-16 09:13:14,342 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-05-16 09:13:14,387 - app.utils.logger - INFO - Using Groq API | {'model': 'llama-3.3-70b-versatile'}
+2026-05-16 09:13:14,390 - app.utils.logger - INFO - Step 1: Classification | {'event_id': 'evt_test_001'}
+2026-05-16 09:13:14,398 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:13:14,439 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-16 09:13:14,486 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffff9c2c2ed0>
+2026-05-16 09:13:14,486 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffff9c150680> server_hostname='api.groq.com' timeout=5.0
+2026-05-16 09:13:14,522 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffff9c2c3150>
+2026-05-16 09:13:14,523 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:14,523 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:13:14,524 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:13:14,524 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:13:14,525 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:14,884 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 16 May 2026 09:13:14 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'999'), (b'x-ratelimit-remaining-tokens', b'10815'), (b'x-ratelimit-reset-requests', b'1m26.4s'), (b'x-ratelimit-reset-tokens', b'5.925s'), (b'x-request-id', b'req_01krr0zbk2edkbsw0yytfhbdw8'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=6ZQXCeCLntajLA6FL7.fVKkUEgCpHRx5RKUdYT4JZ7g-1778922794.546141-1.0.1.1-GkboEYZknZV02yX.wMSQ3hy1RJCP00xQ7_7ul75fa8Mug8PBBoN5inecMpwGCxxIs97MAVFpOxyzfjiItxa7zbEAJAn7FqTYgyhq8XxSwYyr_Qktg8cMcmQjehhUf6yG; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Sat, 16 May 2026 09:43:14 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fc943e9e84b80b0-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:13:14,885 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 09:13:14,886 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:13:14,886 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:13:14,886 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:13:14,886 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:13:14,887 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-16 09:13:14,891 - app.utils.logger - INFO - Step 2: Threat Assessment | {}
+2026-05-16 09:13:14,892 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time frame"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-web-01\nSource: 203.0.113.45\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:13:14,893 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:14,894 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:13:14,894 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:13:14,894 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:13:14,895 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:15,295 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 16 May 2026 09:13:15 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'998'), (b'x-ratelimit-remaining-tokens', b'9509'), (b'x-ratelimit-reset-requests', b'2m52.8s'), (b'x-ratelimit-reset-tokens', b'12.455s'), (b'x-request-id', b'req_01krr0zby8edk9pmq58h2dcen8'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fc943ec29c180b0-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:13:15,297 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 09:13:15,298 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:13:15,298 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:13:15,299 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:13:15,300 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:13:15,300 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-16 09:13:15,304 - app.utils.logger - INFO - Step 3: Investigation Plan | {}
+2026-05-16 09:13:15,306 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time frame"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-web-01\nSource: 203.0.113.45\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed login attempts within a short time frame indicates a deliberate attempt to guess or crack the password, posing a significant risk to the target system", "factors": ["High volume of failed login attempts", "Target is a production system", "Short time window of attempts"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:13:15,307 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:15,308 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:13:15,308 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:13:15,308 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:13:15,309 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:16,070 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 16 May 2026 09:13:15 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'997'), (b'x-ratelimit-remaining-tokens', b'8058'), (b'x-ratelimit-reset-requests', b'4m19.2s'), (b'x-ratelimit-reset-tokens', b'19.71s'), (b'x-request-id', b'req_01krr0zcb6fda9g7byxmqc81m1'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fc943eebc0e80b0-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:13:16,071 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 09:13:16,071 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:13:16,071 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:13:16,071 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:13:16,071 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:13:16,072 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-16 09:13:16,074 - app.utils.logger - INFO - Step 4: Root Cause Analysis | {}
+2026-05-16 09:13:16,075 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time frame"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-web-01\nSource: 203.0.113.45\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed login attempts within a short time frame indicates a deliberate attempt to guess or crack the password, posing a significant risk to the target system", "factors": ["High volume of failed login attempts", "Target is a production system", "Short time window of attempts"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}, {'role': 'assistant', 'content': '{"investigation_steps": ["Verify SSH server configuration and logs for any suspicious activity", "Check for any other related alerts or anomalies from the source IP address", "Block the source IP address temporarily to prevent further attempts"], "priority_checks": ["Check if the target system has multi-factor authentication enabled"], "estimated_time": "30 minutes"}'}, {'role': 'user', 'content': 'Root cause of Brute Force?\n\nRespond ONLY with JSON:\n{"root_cause": "explanation", "attack_chain": ["step1", "step2"], "vulnerability": "CVE or type"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:13:16,076 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:16,077 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:13:16,077 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:13:16,078 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:13:16,078 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:16,585 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 16 May 2026 09:13:16 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'996'), (b'x-ratelimit-remaining-tokens', b'6565'), (b'x-ratelimit-reset-requests', b'5m45.6s'), (b'x-ratelimit-reset-tokens', b'27.175s'), (b'x-request-id', b'req_01krr0zd36edra63xrd142ej0p'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fc943f38f7f80b0-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:13:16,586 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 09:13:16,586 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:13:16,587 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:13:16,587 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:13:16,587 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:13:16,587 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-16 09:13:16,592 - app.utils.logger - ERROR - Failed to parse JSON | {'response': '{"root_cause": "Weak password policy or lack of multi-factor authentication on the target SSH server'}
+2026-05-16 09:13:16,592 - app.utils.logger - INFO - Step 5: Remediation Strategy | {}
+2026-05-16 09:13:16,595 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_test_001",\n  "timestamp": "2025-05-16T10:30:00Z",\n  "event_type": "failed_ssh_login",\n  "src_ip": "203.0.113.45",\n  "dest_host": "prod-web-01",\n  "username": "admin",\n  "failed_attempts": 47,\n  "time_window": "5 minutes"\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time frame"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-web-01\nSource: 203.0.113.45\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed login attempts within a short time frame indicates a deliberate attempt to guess or crack the password, posing a significant risk to the target system", "factors": ["High volume of failed login attempts", "Target is a production system", "Short time window of attempts"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}, {'role': 'assistant', 'content': '{"investigation_steps": ["Verify SSH server configuration and logs for any suspicious activity", "Check for any other related alerts or anomalies from the source IP address", "Block the source IP address temporarily to prevent further attempts"], "priority_checks": ["Check if the target system has multi-factor authentication enabled"], "estimated_time": "30 minutes"}'}, {'role': 'user', 'content': 'Root cause of Brute Force?\n\nRespond ONLY with JSON:\n{"root_cause": "explanation", "attack_chain": ["step1", "step2"], "vulnerability": "CVE or type"}'}, {'role': 'assistant', 'content': '{"root_cause": "Weak password policy or lack of multi-factor authentication on the target SSH server", "attack_chain": ["Reconnaissance of the target system", "Identification of a vulnerable SSH service", "Launch of a brute force attack using automated tools"], "vulnerability": "Weak Passwords (CVE-2019-0708 or similar)}'}, {'role': 'user', 'content': 'Remediate Brute Force (HIGH)?\n\nRespond ONLY with JSON:\n{"immediate_actions": [{"action": "name", "time": "5 min", "command": "cmd"}], "short_term": [], "long_term": []}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-16 09:13:16,596 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:16,597 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-16 09:13:16,597 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-16 09:13:16,597 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-16 09:13:16,598 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-16 09:13:17,144 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 16 May 2026 09:13:17 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'995'), (b'x-ratelimit-remaining-tokens', b'4884'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'35.58s'), (b'x-request-id', b'req_01krr0zdkfedrsx4s9p39bf62w'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fc943f6c9aa80b0-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-16 09:13:17,145 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 09:13:17,146 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-16 09:13:17,146 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-16 09:13:17,146 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-16 09:13:17,146 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-16 09:13:17,146 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-16 09:13:17,149 - app.utils.logger - INFO - All 5 steps complete | {}
+2026-05-16 09:13:17,178 - httpcore.connection - DEBUG - close.started
+2026-05-16 09:13:17,178 - httpcore.connection - DEBUG - close.complete
