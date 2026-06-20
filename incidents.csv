@@ -1,0 +1,2 @@
+id,event_id,event_type,severity,status,source_ip,target_host,username,created_at,is_duplicate,is_correlated,correlation_group_id
+1,evt_dup_001,failed_ssh_login,UNKNOWN,PENDING,10.0.2.50,prod-db,root,2026-05-25T04:47:44.080841,False,False,

@@ -766,3 +766,649 @@ WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relki
 2026-05-16 09:13:17,149 - app.utils.logger - INFO - All 5 steps complete | {}
 2026-05-16 09:13:17,178 - httpcore.connection - DEBUG - close.started
 2026-05-16 09:13:17,178 - httpcore.connection - DEBUG - close.complete
+2026-05-18 11:00:38,365 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-18 11:01:03,474 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-18 11:01:03,856 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-18 11:01:03,867 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 11:01:03,893 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-18 11:01:03,896 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 11:01:03,948 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-18 11:01:03,949 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 11:01:03,966 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-18 11:01:04,010 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 11:01:04,010 - sqlalchemy.engine.Engine - INFO - [generated in 0.00112s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 11:01:04,146 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 11:01:04,147 - sqlalchemy.engine.Engine - INFO - [cached since 0.1378s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 11:01:04,152 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 11:01:04,156 - sqlalchemy.engine.Engine - INFO - [cached since 0.1464s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 11:01:04,163 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-18 11:01:04,179 - app.utils.logger - INFO - ✅ Groq API key loaded | {}
+2026-05-18 11:04:30,697 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-18 11:04:43,875 - app.utils.logger - INFO - Starting SOC Agent... | {}
+2026-05-18 11:04:44,881 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-18 11:04:44,904 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 11:04:44,944 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-18 11:04:44,948 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 11:04:44,999 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-18 11:04:45,001 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 11:04:45,027 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-18 11:04:45,132 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 11:04:45,135 - sqlalchemy.engine.Engine - INFO - [generated in 0.00320s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 11:04:45,185 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 11:04:45,187 - sqlalchemy.engine.Engine - INFO - [cached since 0.05531s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 11:04:45,195 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 11:04:45,197 - sqlalchemy.engine.Engine - INFO - [cached since 0.06531s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 11:04:45,207 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-18 11:04:45,248 - app.utils.logger - INFO - ✅ Groq API key loaded | {}
+2026-05-18 11:09:59,183 - app.utils.logger - INFO - Shutting down SOC Agent... | {}
+2026-05-18 12:25:45,769 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-18 12:25:45,926 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-18 12:25:45,927 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 12:25:45,932 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-18 12:25:45,932 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 12:25:45,936 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-18 12:25:45,936 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 12:25:45,939 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-18 12:25:45,948 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 12:25:45,948 - sqlalchemy.engine.Engine - INFO - [generated in 0.00061s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 12:25:45,966 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 12:25:45,966 - sqlalchemy.engine.Engine - INFO - [cached since 0.01858s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 12:25:45,969 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 12:25:45,969 - sqlalchemy.engine.Engine - INFO - [cached since 0.02116s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 12:25:45,971 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-18 12:25:45,972 - app.utils.logger - INFO - Database initialized | {}
+2026-05-18 12:27:34,782 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-18 12:27:35,484 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-18 12:27:35,498 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-18 12:27:35,498 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 12:27:35,499 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-18 12:27:35,499 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 12:27:35,500 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-18 12:27:35,500 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 12:27:35,501 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-18 12:27:35,504 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 12:27:35,504 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 12:27:35,507 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 12:27:35,508 - sqlalchemy.engine.Engine - INFO - [cached since 0.004101s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 12:27:35,508 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 12:27:35,508 - sqlalchemy.engine.Engine - INFO - [cached since 0.004935s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 12:27:35,509 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-18 12:27:35,509 - app.utils.logger - INFO - Database initialized | {}
+2026-05-18 12:28:25,488 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-18 12:29:15,967 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-18 12:29:15,997 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2026-05-18 12:29:15,997 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 12:29:15,998 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2026-05-18 12:29:15,999 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 12:29:15,999 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2026-05-18 12:29:15,999 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-05-18 12:29:16,000 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-05-18 12:29:16,004 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 12:29:16,004 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 12:29:16,010 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 12:29:16,010 - sqlalchemy.engine.Engine - INFO - [cached since 0.006171s ago] {'table_name': 'incidents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 12:29:16,012 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-05-18 12:29:16,012 - sqlalchemy.engine.Engine - INFO - [cached since 0.007462s ago] {'table_name': 'audit_logs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-05-18 12:29:16,013 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-05-18 12:29:16,013 - app.utils.logger - INFO - Database initialized | {}
+2026-05-18 12:35:01,248 - app.utils.logger - INFO - Alert received | {'event_id': 'evt_day2_test'}
+2026-05-18 12:35:03,232 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-18 12:35:03,267 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-05-18 12:35:03,299 - app.utils.logger - INFO - Using Groq API | {'model': 'llama-3.3-70b-versatile'}
+2026-05-18 12:35:03,299 - app.utils.logger - INFO - Running 5-step analysis | {'event_id': 'evt_day2_test'}
+2026-05-18 12:35:03,300 - app.utils.logger - INFO - Step 1: Classification | {'event_id': 'evt_day2_test'}
+2026-05-18 12:35:03,306 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_test",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T17:00:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 25,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-18 12:35:03,396 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-18 12:35:03,487 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffa221ff50>
+2026-05-18 12:35:03,488 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffffa2306690> server_hostname='api.groq.com' timeout=5.0
+2026-05-18 12:35:03,537 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffa221fb90>
+2026-05-18 12:35:03,538 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:03,540 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-18 12:35:03,541 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-18 12:35:03,544 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-18 12:35:03,544 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:03,943 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 18 May 2026 12:35:03 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'999'), (b'x-ratelimit-remaining-tokens', b'10808'), (b'x-ratelimit-reset-requests', b'1m26.4s'), (b'x-ratelimit-reset-tokens', b'5.96s'), (b'x-request-id', b'req_01krxhaarke5prfs52nmbvdnpt'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=VEpoV_gBDfvbRu2AT9IvUuCyL.4It.kzHVSkZCVt4dk-1779107703.5247707-1.0.1.1-Nq5QE00._lcdxMatayW3JzeeJsy7yEfARre7zZToKzpVu6hPjPpGA4vpvpX0UlzL1zluc_J9ELgO2RL8VsTPmAe1IofHuFOAK9hzJv71Er06kxWme0uIMD239y_vyMSq; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Mon, 18 May 2026 13:05:03 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fdae64b0946ff97-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-18 12:35:03,954 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 12:35:03,956 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-18 12:35:03,957 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-18 12:35:03,957 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-18 12:35:03,958 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-18 12:35:03,958 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-18 12:35:03,972 - app.utils.logger - INFO - Step 2: Threat Assessment | {}
+2026-05-18 12:35:03,975 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_test",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T17:00:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 25,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time frame"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-18 12:35:03,978 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:03,979 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-18 12:35:03,980 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-18 12:35:03,980 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-18 12:35:03,980 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:04,531 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 18 May 2026 12:35:04 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'998'), (b'x-ratelimit-remaining-tokens', b'9511'), (b'x-ratelimit-reset-requests', b'2m52.8s'), (b'x-ratelimit-reset-tokens', b'12.445s'), (b'x-request-id', b'req_01krxhab6be5pryxv8nead24yt'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fdae64dcee7ff97-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-18 12:35:04,536 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 12:35:04,539 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-18 12:35:04,540 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-18 12:35:04,540 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-18 12:35:04,540 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-18 12:35:04,541 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-18 12:35:04,554 - app.utils.logger - INFO - Step 3: Investigation Plan | {}
+2026-05-18 12:35:04,559 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_test",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T17:00:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 25,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time frame"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed SSH login attempts within a short time frame indicates a potential brute force attack, and the fact that the target is a production server increases the potential impact", "factors": ["Target is a production server", "High number of failed login attempts", "Short time window"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-18 12:35:04,564 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:04,572 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-18 12:35:04,573 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-18 12:35:04,574 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-18 12:35:04,575 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:05,247 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 18 May 2026 12:35:05 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'997'), (b'x-ratelimit-remaining-tokens', b'8086'), (b'x-ratelimit-reset-requests', b'4m19.2s'), (b'x-ratelimit-reset-tokens', b'19.57s'), (b'x-request-id', b'req_01krxhabrve5psfjhpjsj4e7nm'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fdae6517e8bff97-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-18 12:35:05,256 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 12:35:05,260 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-18 12:35:05,262 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-18 12:35:05,263 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-18 12:35:05,263 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-18 12:35:05,264 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-18 12:35:05,286 - app.utils.logger - INFO - Step 4: Root Cause Analysis | {}
+2026-05-18 12:35:05,291 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_test",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T17:00:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 25,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time frame"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed SSH login attempts within a short time frame indicates a potential brute force attack, and the fact that the target is a production server increases the potential impact", "factors": ["Target is a production server", "High number of failed login attempts", "Short time window"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}, {'role': 'assistant', 'content': '{"investigation_steps": ["Verify SSH server logs for additional failed login attempts", "Check firewall and network device logs for suspicious traffic from the source IP", "Review user account settings and password policies for the targeted username"], "priority_checks": ["Check if the source IP is internal or external to the network"], "estimated_time": "30 minutes"}'}, {'role': 'user', 'content': 'Root cause of Brute Force?\n\nRespond ONLY with JSON:\n{"root_cause": "explanation", "attack_chain": ["step1", "step2"], "vulnerability": "CVE or type"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-18 12:35:05,296 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:05,297 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-18 12:35:05,298 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-18 12:35:05,299 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-18 12:35:05,300 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:05,942 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 18 May 2026 12:35:05 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'996'), (b'x-ratelimit-remaining-tokens', b'6572'), (b'x-ratelimit-reset-requests', b'5m45.6s'), (b'x-ratelimit-reset-tokens', b'27.139s'), (b'x-request-id', b'req_01krxhacfde5srpgpfh3wyzr4h'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fdae655f891ff97-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-18 12:35:05,946 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 12:35:05,948 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-18 12:35:05,949 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-18 12:35:05,950 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-18 12:35:05,951 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-18 12:35:05,952 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-18 12:35:05,978 - app.utils.logger - INFO - Step 5: Remediation Strategy | {}
+2026-05-18 12:35:05,981 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_test",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T17:00:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 25,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time frame"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed SSH login attempts within a short time frame indicates a potential brute force attack, and the fact that the target is a production server increases the potential impact", "factors": ["Target is a production server", "High number of failed login attempts", "Short time window"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}, {'role': 'assistant', 'content': '{"investigation_steps": ["Verify SSH server logs for additional failed login attempts", "Check firewall and network device logs for suspicious traffic from the source IP", "Review user account settings and password policies for the targeted username"], "priority_checks": ["Check if the source IP is internal or external to the network"], "estimated_time": "30 minutes"}'}, {'role': 'user', 'content': 'Root cause of Brute Force?\n\nRespond ONLY with JSON:\n{"root_cause": "explanation", "attack_chain": ["step1", "step2"], "vulnerability": "CVE or type"}'}, {'role': 'assistant', 'content': '{"root_cause": "Weak password policy or lack of multi-factor authentication, allowing an attacker to attempt a large number of login attempts", "attack_chain": ["Reconnaissance of the target server and identification of a valid username", "Exploitation of weak password policy through automated brute force attempts"], "vulnerability": "Weak Passwords ( CWE-521 )"}'}, {'role': 'user', 'content': 'Remediate Brute Force (HIGH)?\n\nRespond ONLY with JSON:\n{"immediate_actions": [{"action": "name", "time": "5 min", "command": "cmd"}], "short_term": [], "long_term": []}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-18 12:35:05,985 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:05,986 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-18 12:35:05,987 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-18 12:35:05,988 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-18 12:35:05,988 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-18 12:35:06,308 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 18 May 2026 12:35:06 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'995'), (b'x-ratelimit-remaining-tokens', b'4910'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'35.45s'), (b'x-request-id', b'req_01krxhad4zej1bg53wmz5rzyj6'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fdae65a49a6ff97-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-18 12:35:06,311 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-18 12:35:06,312 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-18 12:35:06,313 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-18 12:35:06,313 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-18 12:35:06,314 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-18 12:35:06,315 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-18 12:35:06,323 - app.utils.logger - INFO - All 5 steps complete | {}
+2026-05-18 12:35:06,355 - app.utils.logger - ERROR - Analysis failed | {'error': "'source_ip' is an invalid keyword argument for Incident"}
+2026-05-18 12:43:43,107 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-18 12:43:43,392 - httpcore.connection - DEBUG - close.started
+2026-05-18 12:43:43,399 - httpcore.connection - DEBUG - close.complete
+2026-05-19 04:16:39,276 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-19 04:16:39,553 - app.utils.logger - INFO - Database initialized | {}
+2026-05-19 04:16:49,155 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-19 04:16:50,118 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-19 04:16:50,158 - app.utils.logger - INFO - Database initialized | {}
+2026-05-19 04:16:58,754 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-19 04:16:59,670 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-19 04:16:59,698 - app.utils.logger - INFO - Database initialized | {}
+2026-05-19 04:17:53,407 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-19 04:18:12,348 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-19 04:18:12,397 - app.utils.logger - INFO - Database initialized | {}
+2026-05-19 04:20:17,951 - app.utils.logger - INFO - Alert received | {'event_id': 'evt_day2_final_001'}
+2026-05-19 04:20:18,416 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-19 04:20:18,433 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-05-19 04:20:18,457 - app.utils.logger - INFO - Using Groq API | {'model': 'llama-3.3-70b-versatile'}
+2026-05-19 04:20:18,457 - app.utils.logger - INFO - Running 5-step analysis | {'event_id': 'evt_day2_final_001'}
+2026-05-19 04:20:18,457 - app.utils.logger - INFO - Step 1: Classification | {'event_id': 'evt_day2_final_001'}
+2026-05-19 04:20:18,458 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:20:18,475 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-19 04:20:18,878 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffa2cd7190>
+2026-05-19 04:20:18,878 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffffa2c296d0> server_hostname='api.groq.com' timeout=5.0
+2026-05-19 04:20:18,978 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffa2cd7350>
+2026-05-19 04:20:18,979 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:18,980 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:20:18,980 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:20:18,981 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:20:18,981 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:19,334 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:20:19 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'999'), (b'x-ratelimit-remaining-tokens', b'10806'), (b'x-ratelimit-reset-requests', b'1m26.4s'), (b'x-ratelimit-reset-tokens', b'5.97s'), (b'x-request-id', b'req_01krz7d4wtfj1v7z85dw9yq989'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=9Sv3gn58.l.KpPFaa6nFpulKRnSC3IM4Pbm8nKXrhkg-1779164418.9421663-1.0.1.1-bsaIYB2ExyOQEWgoW_fzUWmH6rOWLJUcCh38k6M9ZL52Zk5yQbWJUq9uXf9ES1w2Xvc5g3LqYWfQGkK8ypcJppIezgEqw8M9vISqvBN2k2dYJuS.Izusc6Wu9kAVqq_P; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Tue, 19 May 2026 04:50:19 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe04ef26f6468a4-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:20:19,336 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:20:19,339 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:20:19,340 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:20:19,340 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:20:19,340 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:20:19,341 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:20:19,350 - app.utils.logger - INFO - Step 2: Threat Assessment | {}
+2026-05-19 04:20:19,351 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time window"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:20:19,352 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:19,352 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:20:19,352 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:20:19,353 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:20:19,353 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:20,023 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:20:19 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'998'), (b'x-ratelimit-remaining-tokens', b'9495'), (b'x-ratelimit-reset-requests', b'2m52.8s'), (b'x-ratelimit-reset-tokens', b'12.524s'), (b'x-request-id', b'req_01krz7d58geyzaq8v20rs1j3y1'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe04ef4bcea68a4-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:20:20,041 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:20:20,043 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:20:20,045 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:20:20,045 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:20:20,046 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:20:20,048 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:20:20,064 - app.utils.logger - INFO - Step 3: Investigation Plan | {}
+2026-05-19 04:20:20,066 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time window"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed SSH login attempts within a short time window indicates a deliberate attempt to guess or crack the password, posing a significant threat to the production server", "factors": ["Multiple failed login attempts", "Short time window", "Target is a production server"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:20:20,070 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:20,070 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:20:20,071 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:20:20,071 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:20:20,071 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:20,529 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:20:20 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'997'), (b'x-ratelimit-remaining-tokens', b'8103'), (b'x-ratelimit-reset-requests', b'4m19.2s'), (b'x-ratelimit-reset-tokens', b'19.485s'), (b'x-request-id', b'req_01krz7d5z5e669q6xxzz36dy9a'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe04ef93e6368a4-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:20:20,532 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:20:20,534 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:20:20,535 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:20:20,536 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:20:20,537 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:20:20,537 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:20:20,543 - app.utils.logger - INFO - Step 4: Root Cause Analysis | {}
+2026-05-19 04:20:20,548 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time window"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed SSH login attempts within a short time window indicates a deliberate attempt to guess or crack the password, posing a significant threat to the production server", "factors": ["Multiple failed login attempts", "Short time window", "Target is a production server"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}, {'role': 'assistant', 'content': '{"investigation_steps": ["Review SSH logs for similar attempts", "Check for any suspicious account activity on prod-server-01", "Verify the source IP address 192.168.1.100 and its legitimacy"], "priority_checks": ["Verify if any accounts were compromised"], "estimated_time": "30 minutes"}'}, {'role': 'user', 'content': 'Root cause of Brute Force?\n\nRespond ONLY with JSON:\n{"root_cause": "explanation", "attack_chain": ["step1", "step2"], "vulnerability": "CVE or type"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:20:20,550 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:20,550 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:20:20,550 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:20:20,551 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:20:20,551 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:21,235 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:20:21 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'996'), (b'x-ratelimit-remaining-tokens', b'7478'), (b'x-ratelimit-reset-requests', b'5m45.6s'), (b'x-ratelimit-reset-tokens', b'22.61s'), (b'x-request-id', b'req_01krz7d6dyez1vqjf37tdt8jdz'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe04efc3d5168a4-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:20:21,237 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:20:21,237 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:20:21,237 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:20:21,238 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:20:21,238 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:20:21,238 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:20:21,241 - app.utils.logger - INFO - Step 5: Remediation Strategy | {}
+2026-05-19 04:20:21,243 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time window"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed SSH login attempts within a short time window indicates a deliberate attempt to guess or crack the password, posing a significant threat to the production server", "factors": ["Multiple failed login attempts", "Short time window", "Target is a production server"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}, {'role': 'assistant', 'content': '{"investigation_steps": ["Review SSH logs for similar attempts", "Check for any suspicious account activity on prod-server-01", "Verify the source IP address 192.168.1.100 and its legitimacy"], "priority_checks": ["Verify if any accounts were compromised"], "estimated_time": "30 minutes"}'}, {'role': 'user', 'content': 'Root cause of Brute Force?\n\nRespond ONLY with JSON:\n{"root_cause": "explanation", "attack_chain": ["step1", "step2"], "vulnerability": "CVE or type"}'}, {'role': 'assistant', 'content': '{"root_cause": "Weak password policy or lack of rate limiting on SSH logins, allowing an attacker to perform a large number of login attempts from a single IP address", "attack_chain": ["Reconnaissance of target server", "Exploitation of weak password policy through automated login attempts"], "vulnerability": "Weak Passwords ( CWE-521 )"}'}, {'role': 'user', 'content': 'Remediate Brute Force (HIGH)?\n\nRespond ONLY with JSON:\n{"immediate_actions": [{"action": "name", "time": "5 min", "command": "cmd"}], "short_term": [], "long_term": []}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:20:21,244 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:21,245 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:20:21,245 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:20:21,247 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:20:21,247 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:20:21,586 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:20:21 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'995'), (b'x-ratelimit-remaining-tokens', b'5899'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'30.505s'), (b'x-request-id', b'req_01krz7d73qe698gya99echrz1c'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe04f008d8e68a4-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:20:21,587 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:20:21,587 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:20:21,587 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:20:21,587 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:20:21,588 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:20:21,588 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:20:21,591 - app.utils.logger - INFO - All 5 steps complete | {}
+2026-05-19 04:20:21,628 - app.utils.logger - ERROR - Analysis failed | {'error': '(psycopg2.errors.UndefinedColumn) column "source_ip" of relation "incidents" does not exist\nLINE 1: INSERT INTO incidents (event_id, event_type, source_ip, targ...\n                                                     ^\n\n[SQL: INSERT INTO incidents (event_id, event_type, source_ip, target_host, username, raw_alert, analysis_results, severity, status, created_at) VALUES (%(event_id)s, %(event_type)s, %(source_ip)s, %(target_host)s, %(username)s, %(raw_alert)s, %(analysis_results)s, %(severity)s, %(status)s, %(created_at)s) RETURNING incidents.id]\n[parameters: {\'event_id\': \'evt_day2_final_001\', \'event_type\': \'failed_ssh_login\', \'source_ip\': \'192.168.1.100\', \'target_host\': \'prod-server-01\', \'username\': \'admin\', \'raw_alert\': \'{"event_id": "evt_day2_final_001", "event_type": "failed_ssh_login", "timestamp": "2026-05-18T22:41:00Z", "src_ip": "192.168.1.100", "dest_host": "prod-server-01", "username": "admin", "details": {"failed_attempts": 23, "time_window": "10 minutes"}}\', \'analysis_results\': \'{"step_1_classification": {"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multi ... (4687 characters truncated) ... tables -A INPUT -s 192.168.1.100 -j DROP\\\\"}], \\\\"short_term\\\\": [], \\\\"long_term\\\\": []}"}], "provider": "groq", "model": "llama-3.3-70b-versatile"}\', \'severity\': \'HIGH\', \'status\': \'analyzed\', \'created_at\': datetime.datetime(2026, 5, 19, 4, 20, 21, 611450)}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'}
+2026-05-19 04:21:48,523 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-19 04:21:48,693 - httpcore.connection - DEBUG - close.started
+2026-05-19 04:21:48,695 - httpcore.connection - DEBUG - close.complete
+2026-05-19 04:22:18,084 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-19 04:22:18,160 - app.utils.logger - INFO - Database initialized | {}
+2026-05-19 04:24:00,522 - app.utils.logger - INFO - Alert received | {'event_id': 'evt_day2_final_001'}
+2026-05-19 04:24:00,904 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-05-19 04:24:00,909 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-05-19 04:24:00,926 - app.utils.logger - INFO - Using Groq API | {'model': 'llama-3.3-70b-versatile'}
+2026-05-19 04:24:00,926 - app.utils.logger - INFO - Running 5-step analysis | {'event_id': 'evt_day2_final_001'}
+2026-05-19 04:24:00,926 - app.utils.logger - INFO - Step 1: Classification | {'event_id': 'evt_day2_final_001'}
+2026-05-19 04:24:00,927 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:24:00,933 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-19 04:24:00,972 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffff9ae6c510>
+2026-05-19 04:24:00,972 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffff9ada96d0> server_hostname='api.groq.com' timeout=5.0
+2026-05-19 04:24:00,986 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffff9ae6c790>
+2026-05-19 04:24:00,986 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:00,987 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:24:00,987 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:24:00,987 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:24:00,987 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:01,339 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:24:01 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'996'), (b'x-ratelimit-remaining-tokens', b'11729'), (b'x-ratelimit-reset-requests', b'5m45.6s'), (b'x-ratelimit-reset-tokens', b'1.355s'), (b'x-request-id', b'req_01krz7kxphfc1tfgtnwkxd29ah'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=3sALuCpvyrM3HWzXS739Mg4JgHQmbPXusQJx2Mdk8sU-1779164640.9463093-1.0.1.1-FGOlnUSdVMq0lZxSsvb4iPUplq8ZuTCZdppVzNBcyuM0_TafqZw9SlRIqcq9MNNxGjSR3jWArmAU995QT7wGfQaGwduxP1DibiNgwqQ.riFl88DuIrdQA_J7XpeeYAx7; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Tue, 19 May 2026 04:54:01 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe0545dea5488ea-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:24:01,342 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:24:01,342 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:24:01,344 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:24:01,344 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:24:01,344 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:24:01,344 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:24:01,348 - app.utils.logger - INFO - Step 2: Threat Assessment | {}
+2026-05-19 04:24:01,348 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time window"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:24:01,349 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:01,349 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:24:01,350 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:24:01,350 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:24:01,350 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:02,242 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:24:01 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'995'), (b'x-ratelimit-remaining-tokens', b'11428'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'2.86s'), (b'x-request-id', b'req_01krz7ky1yekqtzb3svnp7105n'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe054602ca388ea-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:24:02,243 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:24:02,244 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:24:02,244 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:24:02,244 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:24:02,244 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:24:02,245 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:24:02,247 - app.utils.logger - INFO - Step 3: Investigation Plan | {}
+2026-05-19 04:24:02,248 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time window"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed login attempts within a short time window indicates a deliberate attempt to guess the password, and the fact that the target is a production server increases the potential impact", "factors": ["Multiple failed login attempts", "Short time window", "Production server target", "Potential for unauthorized access"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:24:02,249 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:02,249 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:24:02,250 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:24:02,250 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:24:02,250 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:03,110 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:24:02 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'994'), (b'x-ratelimit-remaining-tokens', b'11057'), (b'x-ratelimit-reset-requests', b'8m38.4s'), (b'x-ratelimit-reset-tokens', b'4.715s'), (b'x-request-id', b'req_01krz7kyy0ekrsrxq4sm784rkn'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe05465cb4388ea-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:24:03,112 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:24:03,113 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:24:03,114 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:24:03,114 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:24:03,114 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:24:03,114 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:24:03,120 - app.utils.logger - INFO - Step 4: Root Cause Analysis | {}
+2026-05-19 04:24:03,123 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time window"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed login attempts within a short time window indicates a deliberate attempt to guess the password, and the fact that the target is a production server increases the potential impact", "factors": ["Multiple failed login attempts", "Short time window", "Production server target", "Potential for unauthorized access"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}, {'role': 'assistant', 'content': '{"investigation_steps": ["Review SSH logs for prod-server-01 to confirm the failed login attempts", "Check the source IP address 192.168.1.100 for any other suspicious activity", "Verify the password policy for the admin account to ensure it is strong and compliant with company standards"], "priority_checks": ["Verify if the admin account is locked out or if any other accounts were successfully accessed"], "estimated_time": "30 minutes"}'}, {'role': 'user', 'content': 'Root cause of Brute Force?\n\nRespond ONLY with JSON:\n{"root_cause": "explanation", "attack_chain": ["step1", "step2"], "vulnerability": "CVE or type"}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:24:03,125 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:03,126 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:24:03,126 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:24:03,126 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:24:03,126 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:04,322 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:24:03 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'993'), (b'x-ratelimit-remaining-tokens', b'10539'), (b'x-ratelimit-reset-requests', b'10m4.8s'), (b'x-ratelimit-reset-tokens', b'7.305s'), (b'x-request-id', b'req_01krz7kzscfztahpwgmaz02wbr'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe0546b499f88ea-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:24:04,324 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:24:04,324 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:24:04,325 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:24:04,325 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:24:04,325 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:24:04,325 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:24:04,329 - app.utils.logger - INFO - Step 5: Remediation Strategy | {}
+2026-05-19 04:24:04,331 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'You are a senior SOC analyst. Analyze this security alert.\n\nRAW ALERT:\n{\n  "event_id": "evt_day2_final_001",\n  "event_type": "failed_ssh_login",\n  "timestamp": "2026-05-18T22:41:00Z",\n  "src_ip": "192.168.1.100",\n  "dest_host": "prod-server-01",\n  "username": "admin",\n  "details": {\n    "failed_attempts": 23,\n    "time_window": "10 minutes"\n  }\n}\n\nRespond ONLY with valid JSON (no markdown):\n{"attack_type": "type", "mitre_technique": "T1234.567", "category": "category", "brief_description": "desc"}'}, {'role': 'assistant', 'content': '{"attack_type": "Brute Force", "mitre_technique": "T1110.001", "category": "Credential Access", "brief_description": "Multiple failed SSH login attempts from a single IP address within a short time window"}'}, {'role': 'user', 'content': 'Given this is a Brute Force:\n\nTarget: prod-server-01\nSource: 192.168.1.100\n\nAssess threat level. Respond ONLY with JSON:\n{"severity": "CRITICAL/HIGH/MEDIUM/LOW", "threat_score": "1-10", "reasoning": "explanation", "factors": ["f1", "f2"]}'}, {'role': 'assistant', 'content': '{"severity": "HIGH", "threat_score": "8", "reasoning": "The high number of failed login attempts within a short time window indicates a deliberate attempt to guess the password, and the fact that the target is a production server increases the potential impact", "factors": ["Multiple failed login attempts", "Short time window", "Production server target", "Potential for unauthorized access"]}'}, {'role': 'user', 'content': 'Given Brute Force with HIGH severity:\n\nWhat investigation steps? Respond ONLY with JSON:\n{"investigation_steps": ["step1", "step2"], "priority_checks": ["check1"], "estimated_time": "X minutes"}'}, {'role': 'assistant', 'content': '{"investigation_steps": ["Review SSH logs for prod-server-01 to confirm the failed login attempts", "Check the source IP address 192.168.1.100 for any other suspicious activity", "Verify the password policy for the admin account to ensure it is strong and compliant with company standards"], "priority_checks": ["Verify if the admin account is locked out or if any other accounts were successfully accessed"], "estimated_time": "30 minutes"}'}, {'role': 'user', 'content': 'Root cause of Brute Force?\n\nRespond ONLY with JSON:\n{"root_cause": "explanation", "attack_chain": ["step1", "step2"], "vulnerability": "CVE or type"}'}, {'role': 'assistant', 'content': '{"root_cause": "Weak password policy or lack of account lockout policy, allowing an attacker to perform multiple login attempts without being blocked", "attack_chain": ["Reconnaissance of the target server and identification of the admin account", "Use of automated tools to perform brute force login attempts"], "vulnerability": "Weak Passwords (CWE-521)"}'}, {'role': 'user', 'content': 'Remediate Brute Force (HIGH)?\n\nRespond ONLY with JSON:\n{"immediate_actions": [{"action": "name", "time": "5 min", "command": "cmd"}], "short_term": [], "long_term": []}'}], 'model': 'llama-3.3-70b-versatile', 'max_tokens': 1000, 'temperature': 0.3}}
+2026-05-19 04:24:04,332 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:04,333 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-19 04:24:04,333 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-19 04:24:04,333 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-19 04:24:04,333 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-19 04:24:04,903 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 19 May 2026 04:24:04 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'992'), (b'x-ratelimit-remaining-tokens', b'9929'), (b'x-ratelimit-reset-requests', b'11m31.2s'), (b'x-ratelimit-reset-tokens', b'10.355s'), (b'x-request-id', b'req_01krz7m0z5fcbtg2zdx1ardrta'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'9fe05472da2488ea-BOM'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-05-19 04:24:04,904 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 04:24:04,905 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-19 04:24:04,905 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-19 04:24:04,905 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-19 04:24:04,906 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-19 04:24:04,906 - groq._base_client - DEBUG - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "200 OK"
+2026-05-19 04:24:04,909 - app.utils.logger - INFO - All 5 steps complete | {}
+2026-05-19 04:24:04,973 - app.utils.logger - INFO - Incident saved | {'incident_id': 1}
+2026-05-20 03:11:26,698 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 03:11:27,688 - httpcore.connection - DEBUG - close.started
+2026-05-20 03:11:27,710 - httpcore.connection - DEBUG - close.complete
+2026-05-20 03:11:29,861 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 03:11:30,093 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 03:13:51,168 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 03:13:52,606 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 03:13:52,709 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 03:14:22,760 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 03:14:23,786 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 03:14:23,828 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 03:19:40,493 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 03:19:55,342 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 03:19:55,457 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 03:26:33,292 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 03:26:35,204 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 03:26:35,256 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 03:27:11,500 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 03:27:47,390 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 03:27:47,476 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 03:29:53,756 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 03:29:55,787 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 03:29:55,905 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 03:30:42,057 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 03:30:43,753 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 03:30:43,795 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 03:32:24,272 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 03:32:25,358 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 03:32:25,406 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 03:33:38,607 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-20 05:36:45,562 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-20 05:36:45,624 - app.utils.logger - INFO - Database initialized | {}
+2026-05-20 05:44:47,225 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_async_001'}
+2026-05-20 05:44:47,272 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-20 05:44:47,376 - app.utils.logger - INFO - Task queued | {'task_id': 'f1b29607-b2cf-40a3-9203-67a05f54cb00', 'event_id': 'evt_async_001'}
+2026-05-20 05:46:03,978 - app.utils.logger - INFO - Task status checked | {'task_id': 'f1b29607-b2cf-40a3-9203-67a05f54cb00'}
+2026-05-20 16:55:10,512 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-21 08:01:58,530 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-21 08:01:59,248 - app.utils.logger - INFO - Database initialized | {}
+2026-05-21 08:02:19,604 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-21 08:36:59,572 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-21 08:36:59,645 - app.utils.logger - INFO - Database initialized | {}
+2026-05-21 08:38:12,705 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_final_day3_001'}
+2026-05-21 08:38:12,756 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-21 08:38:12,878 - app.utils.logger - INFO - Task queued | {'task_id': '0fda7df4-46ad-44c9-8d5d-ff5aa9cfaf47', 'event_id': 'evt_final_day3_001'}
+2026-05-21 08:39:14,889 - app.utils.logger - INFO - Task status checked | {'task_id': '0fda7df4-46ad-44c9-8d5d-ff5aa9cfaf47'}
+2026-05-21 08:43:40,344 - app.utils.logger - INFO - Task status checked | {'task_id': '0fda7df4-46ad-44c9-8d5d-ff5aa9cfaf47'}
+2026-05-21 08:47:45,270 - app.utils.logger - INFO - Task status checked | {'task_id': '0fda7df4-46ad-44c9-8d5d-ff5aa9cfaf47'}
+2026-05-21 08:55:12,524 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-21 08:55:14,283 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-21 08:55:14,339 - app.utils.logger - INFO - Database initialized | {}
+2026-05-21 08:55:27,716 - celery.utils.functional - DEBUG - 
+def chunks(task, it, n):
+    return 1
+
+2026-05-21 08:55:27,717 - celery.utils.functional - DEBUG - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+2026-05-21 08:55:27,718 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-21 08:55:27,718 - celery.utils.functional - DEBUG - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2026-05-21 08:55:27,719 - celery.utils.functional - DEBUG - 
+def xmap(task, it):
+    return 1
+
+2026-05-21 08:55:27,719 - celery.utils.functional - DEBUG - 
+def backend_cleanup():
+    return 1
+
+2026-05-21 08:55:27,719 - celery.utils.functional - DEBUG - 
+def chain(*args, **kwargs):
+    return 1
+
+2026-05-21 08:55:27,721 - celery.utils.functional - DEBUG - 
+def xstarmap(task, it):
+    return 1
+
+2026-05-21 08:55:27,721 - celery.utils.functional - DEBUG - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2026-05-21 08:55:27,722 - celery.utils.functional - DEBUG - 
+def debug_task(self):
+    return 1
+
+2026-05-21 08:55:27,722 - celery.utils.functional - DEBUG - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2026-05-21 08:56:22,473 - app.utils.logger - INFO - Task status checked | {'task_id': '0fda7df4-46ad-44c9-8d5d-ff5aa9cfaf47'}
+2026-05-23 03:42:13,262 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 03:42:13,373 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 03:42:49,263 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_validation_001'}
+2026-05-23 03:42:49,322 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-23 03:42:49,430 - app.utils.logger - INFO - Task queued | {'task_id': 'feb7962b-3fd2-458c-b37a-8adff8356fce', 'event_id': 'evt_validation_001'}
+2026-05-23 03:43:44,644 - app.utils.logger - INFO - Incidents listed | {'count': 0}
+2026-05-23 03:45:39,829 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 03:45:41,274 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 03:45:41,341 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 03:49:38,368 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 03:58:44,179 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 03:58:44,301 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 03:58:58,612 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 04:02:39,734 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 04:02:39,808 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 04:03:12,435 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_query_001'}
+2026-05-23 04:03:12,497 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-23 04:03:12,620 - app.utils.logger - INFO - Task queued | {'task_id': 'f9c7b742-b980-474b-8954-8ff00710889f', 'event_id': 'evt_query_001'}
+2026-05-23 04:03:13,650 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_query_002'}
+2026-05-23 04:03:13,659 - app.utils.logger - INFO - Task queued | {'task_id': 'df95bf7d-3843-4e10-a9ce-25c3fa212d96', 'event_id': 'evt_query_002'}
+2026-05-23 04:03:14,684 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_query_003'}
+2026-05-23 04:03:14,694 - app.utils.logger - INFO - Task queued | {'task_id': 'ab84c012-95df-43c4-a773-331aa3bc80fb', 'event_id': 'evt_query_003'}
+2026-05-23 04:03:26,784 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': 'HIGH', 'status': None, 'event_id': None}}
+2026-05-23 04:03:35,946 - app.utils.logger - INFO - Incidents listed | {'count': 3, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': 'evt_query'}}
+2026-05-23 04:03:46,082 - app.utils.logger - INFO - Incidents listed | {'count': 2, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-05-23 04:04:00,055 - app.utils.logger - INFO - Incidents listed | {'count': 3, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-05-23 04:09:12,295 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 04:09:13,974 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 04:09:14,057 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 04:09:35,421 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 04:13:10,137 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 04:13:10,218 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 04:13:40,663 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_query_001'}
+2026-05-23 04:13:40,726 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-23 04:13:40,828 - app.utils.logger - INFO - Task queued | {'task_id': '1fb3528c-7dfa-4158-92a7-5177c9175ece', 'event_id': 'evt_query_001'}
+2026-05-23 04:13:41,849 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_query_002'}
+2026-05-23 04:13:41,859 - app.utils.logger - INFO - Task queued | {'task_id': '9e3ac199-6498-4ea7-b75a-dfbe6f6f2a35', 'event_id': 'evt_query_002'}
+2026-05-23 04:13:43,092 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_query_003'}
+2026-05-23 04:13:43,181 - app.utils.logger - INFO - Task queued | {'task_id': '698b165b-ccac-41fc-8d60-d0eda87a248f', 'event_id': 'evt_query_003'}
+2026-05-23 04:13:50,132 - app.utils.logger - INFO - Statistics retrieved | {'total': 3}
+2026-05-23 04:13:56,628 - app.utils.logger - INFO - Incidents listed | {'count': 3, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-05-23 04:16:26,816 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': 'HIGH', 'status': None, 'event_id': None}}
+2026-05-23 04:16:36,999 - app.utils.logger - INFO - Incidents listed | {'count': 3, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': 'evt_query'}}
+2026-05-23 04:16:46,291 - app.utils.logger - INFO - Incidents listed | {'count': 2, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-05-23 04:16:54,345 - app.utils.logger - INFO - Incidents listed | {'count': 3, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-05-23 04:20:28,702 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 04:20:30,134 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 04:20:30,169 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 04:20:35,054 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 04:24:36,695 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 04:24:36,783 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 04:25:03,363 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_query_001'}
+2026-05-23 04:25:03,422 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-23 04:25:03,535 - app.utils.logger - INFO - Task queued | {'task_id': 'aa25563a-5421-4ff7-ba60-7c32c6969634', 'event_id': 'evt_query_001'}
+2026-05-23 04:25:04,564 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_query_002'}
+2026-05-23 04:25:04,575 - app.utils.logger - INFO - Task queued | {'task_id': '64840b05-564d-4b6d-8258-112395e41f1e', 'event_id': 'evt_query_002'}
+2026-05-23 04:25:05,592 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_query_003'}
+2026-05-23 04:25:05,606 - app.utils.logger - INFO - Task queued | {'task_id': '1e9d90ee-cf30-4537-b858-69f1b34c1016', 'event_id': 'evt_query_003'}
+2026-05-23 04:25:15,133 - app.utils.logger - INFO - Statistics retrieved | {'total': 3}
+2026-05-23 04:25:27,940 - app.utils.logger - INFO - Incidents listed | {'count': 3, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-05-23 04:25:44,928 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': 'HIGH', 'status': None, 'event_id': None}}
+2026-05-23 04:25:55,374 - app.utils.logger - INFO - Incidents listed | {'count': 3, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': 'evt_query'}}
+2026-05-23 04:26:06,583 - app.utils.logger - INFO - Incidents listed | {'count': 2, 'total': 3, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-05-23 04:32:19,196 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 04:32:20,871 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 04:32:20,930 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 04:32:32,266 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 04:32:33,233 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 04:32:33,275 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 04:33:37,599 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 04:45:38,308 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 04:45:38,508 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 04:45:49,460 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-23 04:49:41,263 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-23 04:49:41,363 - app.utils.logger - INFO - Database initialized | {}
+2026-05-23 04:50:22,387 - app.utils.logger - INFO - Batch analysis received | {'count': 2}
+2026-05-23 04:50:22,445 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-25 04:30:29,677 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-25 04:30:29,900 - app.utils.logger - INFO - Database initialized | {}
+2026-05-25 04:30:34,468 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-25 04:34:55,227 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-25 04:34:55,425 - app.utils.logger - INFO - Database initialized | {}
+2026-05-25 04:36:11,247 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:36:11,271 - app.utils.logger - ERROR - Failed to queue analysis | {'error': 'Relationship Incident.correlated_incidents could not determine any unambiguous local/remote column pairs based on join condition and remote_side arguments.  Consider using the remote() annotation to accurately mark those elements of the join condition that are on the remote side of the relationship.'}
+2026-05-25 04:36:12,305 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:36:12,306 - app.utils.logger - ERROR - Failed to queue analysis | {'error': "One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Incident(incidents)]'. Original exception was: Relationship Incident.correlated_incidents could not determine any unambiguous local/remote column pairs based on join condition and remote_side arguments.  Consider using the remote() annotation to accurately mark those elements of the join condition that are on the remote side of the relationship."}
+2026-05-25 04:36:13,330 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:36:13,330 - app.utils.logger - ERROR - Failed to queue analysis | {'error': "One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Incident(incidents)]'. Original exception was: Relationship Incident.correlated_incidents could not determine any unambiguous local/remote column pairs based on join condition and remote_side arguments.  Consider using the remote() annotation to accurately mark those elements of the join condition that are on the remote side of the relationship."}
+2026-05-25 04:36:33,208 - app.utils.logger - ERROR - Failed to get dedup stats | {'error': "One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Incident(incidents)]'. Original exception was: Relationship Incident.correlated_incidents could not determine any unambiguous local/remote column pairs based on join condition and remote_side arguments.  Consider using the remote() annotation to accurately mark those elements of the join condition that are on the remote side of the relationship."}
+2026-05-25 04:36:42,991 - app.utils.logger - ERROR - Failed to export CSV | {'error': "One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Incident(incidents)]'. Original exception was: Relationship Incident.correlated_incidents could not determine any unambiguous local/remote column pairs based on join condition and remote_side arguments.  Consider using the remote() annotation to accurately mark those elements of the join condition that are on the remote side of the relationship."}
+2026-05-25 04:36:53,284 - app.utils.logger - ERROR - Failed to export JSON | {'error': "One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Incident(incidents)]'. Original exception was: Relationship Incident.correlated_incidents could not determine any unambiguous local/remote column pairs based on join condition and remote_side arguments.  Consider using the remote() annotation to accurately mark those elements of the join condition that are on the remote side of the relationship."}
+2026-05-25 04:39:01,771 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-25 04:39:04,471 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-25 04:39:04,512 - app.utils.logger - INFO - Database initialized | {}
+2026-05-25 04:39:11,615 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-25 04:43:11,815 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-25 04:43:11,910 - app.utils.logger - INFO - Database initialized | {}
+2026-05-25 04:43:38,557 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:43:38,594 - app.utils.logger - ERROR - Failed to queue analysis | {'error': "(psycopg2.errors.UndefinedColumn) column incidents.is_duplicate does not exist\nLINE 1: ...at, incidents.updated_at AS incidents_updated_at, incidents....\n                                                             ^\n\n[SQL: SELECT incidents.id AS incidents_id, incidents.event_id AS incidents_event_id, incidents.event_type AS incidents_event_type, incidents.source_ip AS incidents_source_ip, incidents.target_host AS incidents_target_host, incidents.username AS incidents_username, incidents.raw_alert AS incidents_raw_alert, incidents.analysis_results AS incidents_analysis_results, incidents.severity AS incidents_severity, incidents.status AS incidents_status, incidents.task_id AS incidents_task_id, incidents.created_at AS incidents_created_at, incidents.updated_at AS incidents_updated_at, incidents.is_duplicate AS incidents_is_duplicate, incidents.duplicate_of_id AS incidents_duplicate_of_id, incidents.correlation_group_id AS incidents_correlation_group_id, incidents.is_correlated AS incidents_is_correlated, incidents.correlation_reason AS incidents_correlation_reason \nFROM incidents \nWHERE incidents.event_id = %(event_id_1)s \n LIMIT %(param_1)s]\n[parameters: {'event_id_1': 'evt_dup_001', 'param_1': 1}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}
+2026-05-25 04:43:39,622 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:43:39,624 - app.utils.logger - ERROR - Failed to queue analysis | {'error': "(psycopg2.errors.UndefinedColumn) column incidents.is_duplicate does not exist\nLINE 1: ...at, incidents.updated_at AS incidents_updated_at, incidents....\n                                                             ^\n\n[SQL: SELECT incidents.id AS incidents_id, incidents.event_id AS incidents_event_id, incidents.event_type AS incidents_event_type, incidents.source_ip AS incidents_source_ip, incidents.target_host AS incidents_target_host, incidents.username AS incidents_username, incidents.raw_alert AS incidents_raw_alert, incidents.analysis_results AS incidents_analysis_results, incidents.severity AS incidents_severity, incidents.status AS incidents_status, incidents.task_id AS incidents_task_id, incidents.created_at AS incidents_created_at, incidents.updated_at AS incidents_updated_at, incidents.is_duplicate AS incidents_is_duplicate, incidents.duplicate_of_id AS incidents_duplicate_of_id, incidents.correlation_group_id AS incidents_correlation_group_id, incidents.is_correlated AS incidents_is_correlated, incidents.correlation_reason AS incidents_correlation_reason \nFROM incidents \nWHERE incidents.event_id = %(event_id_1)s \n LIMIT %(param_1)s]\n[parameters: {'event_id_1': 'evt_dup_001', 'param_1': 1}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}
+2026-05-25 04:43:40,654 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:43:40,656 - app.utils.logger - ERROR - Failed to queue analysis | {'error': "(psycopg2.errors.UndefinedColumn) column incidents.is_duplicate does not exist\nLINE 1: ...at, incidents.updated_at AS incidents_updated_at, incidents....\n                                                             ^\n\n[SQL: SELECT incidents.id AS incidents_id, incidents.event_id AS incidents_event_id, incidents.event_type AS incidents_event_type, incidents.source_ip AS incidents_source_ip, incidents.target_host AS incidents_target_host, incidents.username AS incidents_username, incidents.raw_alert AS incidents_raw_alert, incidents.analysis_results AS incidents_analysis_results, incidents.severity AS incidents_severity, incidents.status AS incidents_status, incidents.task_id AS incidents_task_id, incidents.created_at AS incidents_created_at, incidents.updated_at AS incidents_updated_at, incidents.is_duplicate AS incidents_is_duplicate, incidents.duplicate_of_id AS incidents_duplicate_of_id, incidents.correlation_group_id AS incidents_correlation_group_id, incidents.is_correlated AS incidents_is_correlated, incidents.correlation_reason AS incidents_correlation_reason \nFROM incidents \nWHERE incidents.event_id = %(event_id_1)s \n LIMIT %(param_1)s]\n[parameters: {'event_id_1': 'evt_dup_001', 'param_1': 1}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}
+2026-05-25 04:43:50,433 - app.utils.logger - ERROR - Failed to get dedup stats | {'error': '(psycopg2.errors.UndefinedColumn) column incidents.is_duplicate does not exist\nLINE 2: ...at, incidents.updated_at AS incidents_updated_at, incidents....\n                                                             ^\n\n[SQL: SELECT count(*) AS count_1 \nFROM (SELECT incidents.id AS incidents_id, incidents.event_id AS incidents_event_id, incidents.event_type AS incidents_event_type, incidents.source_ip AS incidents_source_ip, incidents.target_host AS incidents_target_host, incidents.username AS incidents_username, incidents.raw_alert AS incidents_raw_alert, incidents.analysis_results AS incidents_analysis_results, incidents.severity AS incidents_severity, incidents.status AS incidents_status, incidents.task_id AS incidents_task_id, incidents.created_at AS incidents_created_at, incidents.updated_at AS incidents_updated_at, incidents.is_duplicate AS incidents_is_duplicate, incidents.duplicate_of_id AS incidents_duplicate_of_id, incidents.correlation_group_id AS incidents_correlation_group_id, incidents.is_correlated AS incidents_is_correlated, incidents.correlation_reason AS incidents_correlation_reason \nFROM incidents) AS anon_1]\n(Background on this error at: https://sqlalche.me/e/20/f405)'}
+2026-05-25 04:43:59,276 - app.utils.logger - ERROR - Failed to export CSV | {'error': '(psycopg2.errors.UndefinedColumn) column incidents.is_duplicate does not exist\nLINE 1: ...at, incidents.updated_at AS incidents_updated_at, incidents....\n                                                             ^\n\n[SQL: SELECT incidents.id AS incidents_id, incidents.event_id AS incidents_event_id, incidents.event_type AS incidents_event_type, incidents.source_ip AS incidents_source_ip, incidents.target_host AS incidents_target_host, incidents.username AS incidents_username, incidents.raw_alert AS incidents_raw_alert, incidents.analysis_results AS incidents_analysis_results, incidents.severity AS incidents_severity, incidents.status AS incidents_status, incidents.task_id AS incidents_task_id, incidents.created_at AS incidents_created_at, incidents.updated_at AS incidents_updated_at, incidents.is_duplicate AS incidents_is_duplicate, incidents.duplicate_of_id AS incidents_duplicate_of_id, incidents.correlation_group_id AS incidents_correlation_group_id, incidents.is_correlated AS incidents_is_correlated, incidents.correlation_reason AS incidents_correlation_reason \nFROM incidents]\n(Background on this error at: https://sqlalche.me/e/20/f405)'}
+2026-05-25 04:44:54,087 - app.utils.logger - ERROR - Failed to export JSON | {'error': '(psycopg2.errors.UndefinedColumn) column incidents.is_duplicate does not exist\nLINE 1: ...at, incidents.updated_at AS incidents_updated_at, incidents....\n                                                             ^\n\n[SQL: SELECT incidents.id AS incidents_id, incidents.event_id AS incidents_event_id, incidents.event_type AS incidents_event_type, incidents.source_ip AS incidents_source_ip, incidents.target_host AS incidents_target_host, incidents.username AS incidents_username, incidents.raw_alert AS incidents_raw_alert, incidents.analysis_results AS incidents_analysis_results, incidents.severity AS incidents_severity, incidents.status AS incidents_status, incidents.task_id AS incidents_task_id, incidents.created_at AS incidents_created_at, incidents.updated_at AS incidents_updated_at, incidents.is_duplicate AS incidents_is_duplicate, incidents.duplicate_of_id AS incidents_duplicate_of_id, incidents.correlation_group_id AS incidents_correlation_group_id, incidents.is_correlated AS incidents_is_correlated, incidents.correlation_reason AS incidents_correlation_reason \nFROM incidents]\n(Background on this error at: https://sqlalche.me/e/20/f405)'}
+2026-05-25 04:46:27,734 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-05-25 04:46:41,689 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-25 04:46:41,777 - app.utils.logger - INFO - Database initialized | {}
+2026-05-25 04:47:43,967 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:47:44,119 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-25 04:47:44,298 - app.utils.logger - INFO - Task queued | {'task_id': 'e8cfdfdc-bab9-49df-8290-cb30ac90c00c', 'event_id': 'evt_dup_001'}
+2026-05-25 04:47:45,347 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:47:46,377 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:47:58,056 - app.utils.logger - INFO - Dedup stats retrieved | {}
+2026-05-25 04:48:07,320 - app.utils.logger - INFO - Incidents exported as CSV | {'count': 1}
+2026-05-25 04:48:23,994 - app.utils.logger - INFO - Incidents exported as JSON | {'count': 1}
+2026-05-25 04:59:42,160 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:59:43,319 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:59:44,348 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dup_001'}
+2026-05-25 04:59:45,398 - app.utils.logger - INFO - Dedup stats retrieved | {}
+2026-05-25 04:59:45,419 - app.utils.logger - INFO - Incidents exported as CSV | {'count': 1}
+2026-05-25 04:59:45,432 - app.utils.logger - INFO - Incidents exported as JSON | {'count': 1}
+2026-05-26 04:44:40,066 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-05-26 04:44:40,265 - app.utils.logger - INFO - Database initialized | {}
+2026-05-26 04:46:12,683 - app.utils.logger - INFO - Alert received (async) | {'event_id': 'evt_dashboard_001'}
+2026-05-26 04:46:13,036 - celery.utils.functional - DEBUG - 
+def analyze_security_alert(self, alert_data):
+    return 1
+
+2026-05-26 04:46:13,894 - app.utils.logger - INFO - Task queued | {'task_id': '562ebe6e-5691-4bb0-a4da-ad628463b458', 'event_id': 'evt_dashboard_001'}
+2026-05-26 04:46:37,297 - app.utils.logger - INFO - Incidents listed | {'count': 2, 'total': 2, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-05-26 04:46:46,664 - app.utils.logger - INFO - Statistics retrieved | {'total': 2}
+2026-06-16 08:41:27,882 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-16 08:41:27,979 - app.utils.logger - INFO - Database initialized | {}
+2026-06-16 08:45:57,700 - app.utils.logger - INFO - Incidents listed | {'count': 2, 'total': 2, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-16 08:45:59,439 - app.utils.logger - INFO - Statistics retrieved | {'total': 2}
+2026-06-16 08:47:04,437 - app.utils.logger - INFO - Incidents listed | {'count': 2, 'total': 2, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-16 08:47:06,135 - app.utils.logger - INFO - Statistics retrieved | {'total': 2}
+2026-06-16 08:52:49,453 - app.utils.logger - INFO - Incidents listed | {'count': 2, 'total': 2, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-16 08:52:52,338 - app.utils.logger - INFO - Statistics retrieved | {'total': 2}
+2026-06-16 11:52:34,244 - httpx - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2026-06-16 11:52:34,299 - httpx - DEBUG - load_verify_locations cafile='/usr/local/lib/python3.11/site-packages/certifi/cacert.pem'
+2026-06-16 11:52:34,329 - app.utils.logger - INFO - Using Groq API | {'model': 'llama-3.3-70b-versatile'}
+2026-06-16 11:52:34,330 - app.utils.logger - ERROR - Chat failed | {'error': "'LLMAgent' object has no attribute 'analyze_with_context'"}
+2026-06-18 04:51:48,165 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-18 04:51:48,314 - app.utils.logger - INFO - Database initialized | {}
+2026-06-18 04:53:33,202 - app.utils.logger - INFO - Incidents listed | {'count': 2, 'total': 2, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-18 04:53:33,280 - app.utils.logger - INFO - Statistics retrieved | {'total': 2}

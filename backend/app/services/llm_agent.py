@@ -163,3 +163,18 @@ Respond ONLY with JSON:
             log_error("Failed to parse JSON", response=response[:100])
             return {"raw_response": response}
 
+def analyze_with_context(self, context: str) -> str:
+    """
+    Analyze incidents with custom context for chatbot
+    """
+    try:
+        message = self.client.messages.create(
+            model="llama-3.3-70b-versatile",
+            max_tokens=500,
+            messages=[
+                {"role": "user", "content": context}
+            ]
+        )
+        return message.content[0].text
+    except Exception as e:
+        return f"Error analyzing: {str(e)}"
