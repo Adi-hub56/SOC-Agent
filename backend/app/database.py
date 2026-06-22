@@ -5,7 +5,7 @@ import os
 # Database URL
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql://soc_user:soc_password_dev@postgres:5432/soc_agent"
+    "sqlite:///./soc_agent.db"
 )
 
 # Create engine
