@@ -1,7 +1,14 @@
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from app.database import init_db
+from app.routes import auth
+from app.routes import settings
+from app.routes import apikey
+from app.routes import twofa
+from app.routes import session
+from app.routes import alertrule
 from app.routes.incident import router as incident_router
 from app.celery_app import app as celery_app  # ADD THIS LINE
 from app.utils.logger import log_info
@@ -21,6 +28,15 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan
 )
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://localhost:8000", "https://soc-agent-gamma.vercel.app"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -48,6 +64,12 @@ async def root():
         "api": "/api/analyze"
     }
 
+app.include_router(auth.router)
+app.include_router(settings.router)
+app.include_router(apikey.router)
+app.include_router(twofa.router)
+app.include_router(session.router)
+app.include_router(alertrule.router)
 app.include_router(incident_router)
 app.include_router(health_router)
 if __name__ == "__main__":

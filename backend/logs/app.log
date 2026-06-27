@@ -1426,3 +1426,170 @@ def analyze_security_alert(self, alert_data):
 2026-06-21 23:38:48,139 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
 2026-06-21 23:38:59,290 - app.utils.logger - INFO - Starting SOC Agent API | {}
 2026-06-21 23:38:59,297 - app.utils.logger - INFO - Database initialized | {}
+2026-06-22 11:06:18,660 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-22 11:06:18,667 - app.utils.logger - INFO - Database initialized | {}
+2026-06-22 11:20:18,040 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-22 11:20:18,047 - app.utils.logger - INFO - Database initialized | {}
+2026-06-22 11:20:18,050 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-22 11:21:26,340 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-22 11:21:26,345 - app.utils.logger - INFO - Database initialized | {}
+2026-06-22 11:28:05,880 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-22 11:28:05,909 - app.utils.logger - INFO - Database initialized | {}
+2026-06-22 11:28:05,911 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-22 15:16:33,692 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-22 15:16:33,703 - app.utils.logger - INFO - Database initialized | {}
+2026-06-22 15:19:17,036 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-22 15:19:17,044 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-22 15:19:17,519 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-22 15:19:17,520 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:23:31,663 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-23 13:23:50,676 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-23 13:23:50,703 - app.utils.logger - INFO - Database initialized | {}
+2026-06-23 13:25:48,582 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:25:48,612 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:25:48,687 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:25:48,697 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:28:45,113 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:28:45,400 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:38:48,748 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:38:48,796 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:38:56,034 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:38:56,059 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:39:07,610 - app.utils.logger - ERROR - Chat failed | {'error': "No module named 'groq'"}
+2026-06-23 13:39:12,256 - app.utils.logger - ERROR - Chat failed | {'error': "No module named 'groq'"}
+2026-06-23 13:50:21,178 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:50:23,357 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:50:34,911 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-23 13:50:34,915 - app.utils.logger - INFO - Database initialized | {}
+2026-06-23 13:50:34,917 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-23 13:50:58,152 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:50:58,334 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:51:10,359 - app.utils.logger - ERROR - Chat failed | {'error': "No module named 'groq'"}
+2026-06-23 13:52:13,501 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:52:15,749 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:52:25,960 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-23 13:52:25,965 - app.utils.logger - INFO - Database initialized | {}
+2026-06-23 13:52:25,969 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-23 13:52:37,348 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:52:37,473 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:53:31,185 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-23 13:53:31,188 - app.utils.logger - INFO - Database initialized | {}
+2026-06-23 13:53:41,325 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:53:42,543 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:54:32,230 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:54:32,237 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 13:54:32,259 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 13:54:32,260 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 14:56:07,506 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 14:56:07,606 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:02:16,234 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:02:16,236 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:02:47,621 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:02:47,624 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:02:48,248 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:02:48,252 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:02:48,452 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:02:48,453 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:02:48,604 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:02:48,606 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:02:49,422 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:02:49,425 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:02:57,157 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:02:57,159 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:03:18,213 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:03:18,218 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:03:18,224 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:03:18,226 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:16:08,690 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-23 15:16:28,820 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-23 15:16:28,853 - app.utils.logger - INFO - Database initialized | {}
+2026-06-23 15:20:47,068 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:20:47,079 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:40:40,796 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-23 15:41:03,750 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-23 15:41:03,792 - app.utils.logger - INFO - Database initialized | {}
+2026-06-23 15:42:07,006 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:42:07,029 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:42:07,031 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:42:07,033 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:49:08,668 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-23 15:49:19,372 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-23 15:49:19,380 - app.utils.logger - INFO - Database initialized | {}
+2026-06-23 15:49:54,044 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-23 15:49:54,069 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-23 15:58:13,829 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-23 15:58:19,468 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-23 15:58:19,475 - app.utils.logger - INFO - Database initialized | {}
+2026-06-23 16:01:40,927 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-23 16:01:44,005 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-23 16:01:44,013 - app.utils.logger - INFO - Database initialized | {}
+2026-06-25 12:01:49,287 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:01:49,302 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:01:49,311 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:01:49,314 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:05:58,374 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:05:58,380 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:08:52,675 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:08:52,684 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:08:52,686 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:08:52,690 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:12:25,925 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:12:25,929 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:12:25,932 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:12:25,934 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:12:32,106 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:12:32,113 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:12:32,114 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:12:32,115 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:12:50,420 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:12:50,425 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:12:50,430 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:12:50,431 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:19:46,444 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:19:46,460 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:19:46,460 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:19:46,466 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:19:52,794 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:19:52,798 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:19:52,811 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:19:52,814 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:20:02,452 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-25 12:20:08,924 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-25 12:20:08,969 - app.utils.logger - INFO - Database initialized | {}
+2026-06-25 12:20:50,248 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:20:50,265 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:36:51,595 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-25 12:36:58,653 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-25 12:36:58,699 - app.utils.logger - INFO - Database initialized | {}
+2026-06-25 12:39:41,886 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:39:41,892 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 12:39:41,898 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 12:39:41,975 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 13:04:46,749 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-25 13:04:52,434 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-25 13:04:52,483 - app.utils.logger - INFO - Database initialized | {}
+2026-06-25 13:05:12,411 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 13:05:12,479 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 13:05:12,506 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 13:05:12,511 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 13:07:45,579 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 13:07:45,590 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 13:07:45,594 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 13:07:45,595 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 13:17:03,082 - app.utils.logger - INFO - Shutting down SOC Agent API | {}
+2026-06-25 13:17:07,704 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-25 13:17:07,745 - app.utils.logger - INFO - Database initialized | {}
+2026-06-25 13:17:36,937 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 13:17:36,949 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 13:17:36,958 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 13:17:36,967 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 13:18:57,790 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 13:18:57,797 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-25 13:18:57,800 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-25 13:18:57,801 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-27 11:55:44,123 - app.utils.logger - INFO - Starting SOC Agent API | {}
+2026-06-27 11:55:44,131 - app.utils.logger - INFO - Database initialized | {}
+2026-06-27 11:56:33,703 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-27 11:56:33,719 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
+2026-06-27 11:56:33,736 - app.utils.logger - INFO - Incidents listed | {'count': 0, 'total': 0, 'filters': {'severity': None, 'status': None, 'event_id': None}}
+2026-06-27 11:56:33,742 - app.utils.logger - INFO - Statistics retrieved | {'total': 0}
